@@ -1,0 +1,150 @@
+ORD-1001 | 09:06 | Jana Halabi | Aqaba | Electric Kettle | Home & Kitchen | 1 | 30.00 | Card | Shipped
+ORD-1002 | 09:09 | Khalid Khatib | Amman | Cotton T-Shirt | Fashion | 4 | 15.00 | Wallet | Delivered
+ORD-1003 | 09:13 | Basel Karam | Irbid | Kids Story Book | Books | 1 | 9.00 | Card | Delivered
+ORD-1004 | 09:29 | Reem Zoubi | Karak | Cotton T-Shirt | Fashion | 1 | 15.00 | Cash | Delivered
+ORD-1005 | 09:44 | Reem Farhan | Amman | Bluetooth Headphones | Electronics | 1 | 45.00 | Cash | Delivered
+ORD-1006 | 09:59 | Anas Haddad | Amman | USB-C Cable | Electronics | 2 | 6.00 | Card | Delivered
+ORD-1007 | 10:01 | Basel Karam | Irbid | Resistance Bands | Sports | 2 | 14.00 | Cash | Cancelled
+ORD-1008 | 10:16 | Reem Zoubi | Karak | Dumbbell Set 10kg | Sports | 2 | 58.00 | Card | Shipped
+ORD-1009 | 10:34 | Khalid Darwish | Karak | Wireless Mouse | Electronics | 1 | 12.50 | Card | Delivered
+ORD-1010 | 10:39 | Basel Karam | Irbid | Yoga Mat | Sports | 4 | 26.00 | Cash | Delivered
+ORD-1011 | 10:43 | Rami Khatib | Amman | Laptop Stand | Electronics | 5 | 22.00 | Cash | Cancelled
+ORD-1012 | 10:44 | Tala Zaidan | Irbid | Kids Story Book | Books | 3 | 9.00 | Cash | Delivered
+ORD-1013 | 11:10 | Anas Haddad | Amman | Bluetooth Headphones | Electronics | 3 | 45.00 | Wallet | Cancelled
+ORD-1014 | 11:25 | Zeina Nasser | Zarqa | Data Analysis Handbook | Books | 3 | 52.00 | Card | Delivered
+ORD-1015 | 11:44 | Hussein Sultan | Amman | Wireless Mouse | Electronics | 2 | 12.50 | Card | Delivered
+ORD-1016 | 11:45 | Reem Zaidan | Amman | Water Bottle 1L | Sports | 1 | 8.50 | Wallet | Delivered
+ORD-1017 | 11:53 | Marwan Mansour | Amman | Denim Jacket | Fashion | 4 | 48.00 | Card | Delivered
+ORD-1018 | 12:10 | Amal Halabi | Aqaba | Shampoo 500ml | Beauty | 1 | 11.00 | Cash | Pending
+ORD-1019 | 12:15 | Omar Masri | Amman | Electric Kettle | Home & Kitchen | 5 | 30.00 | Card | Delivered
+ORD-1020 | 12:24 | Mazen Bitar | Madaba | Bluetooth Headphones | Electronics | 3 | 45.00 | Cash | Returned
+ORD-1021 | 12:25 | Fadi Halabi | Amman | Water Bottle 1L | Sports | 2 | 8.50 | Card | Delivered
+ORD-1022 | 12:38 | Ziad Rifai | Amman | Power Bank 10000mAh | Electronics | 1 | 28.00 | Cash | Delivered
+ORD-1023 | 12:41 | Omar Nasser | Salt | Dumbbell Set 10kg | Sports | 4 | 58.00 | Cash | Shipped
+ORD-1024 | 12:46 | Hussein Sultan | Amman | Arabic Novel Collection | Books | 1 | 20.00 | Card | Delivered
+ORD-1025 | 13:00 | Ziad Rifai | Amman | Air Fryer | Home & Kitchen | 1 | 120.00 | Cash | Delivered
+ORD-1026 | 13:15 | Maya Hijazi | Amman | Power Bank 10000mAh | Electronics | 2 | 28.00 | Card | Delivered
+ORD-1027 | 13:23 | Maya Hijazi | Amman | Leather Wallet | Fashion | 1 | 25.00 | Card | Shipped
+ORD-1028 | 13:27 | Reem Zoubi | Karak | Food Container Set | Home & Kitchen | 2 | 18.00 | Card | Cancelled
+ORD-1029 | 13:40 | Layla Zoubi | Irbid | Perfume 50ml | Beauty | 1 | 68.00 | Card | Delivered
+ORD-1030 | 13:46 | Reem Zoubi | Karak | Laptop Stand | Electronics | 2 | 22.00 | Cash | Delivered
+ORD-1031 | 13:51 | Zeina Qasem | Irbid | Food Container Set | Home & Kitchen | 2 | 18.00 | Cash | Returned
+ORD-1032 | 13:58 | Ghada Zaidan | Irbid | Denim Jacket | Fashion | 1 | 48.00 | Cash | Shipped
+ORD-1033 | 13:59 | Anas Haddad | Amman | Face Cream | Beauty | 2 | 24.00 | Cash | Shipped
+ORD-1034 | 14:00 | Zeina Nasser | Zarqa | Resistance Bands | Sports | 1 | 14.00 | Wallet | Shipped
+ORD-1035 | 14:10 | Anas Haddad | Amman | Running Shoes | Fashion | 1 | 55.00 | Card | Cancelled
+ORD-1036 | 14:24 | Dana Ghannam | Irbid | Denim Jacket | Fashion | 1 | 48.00 | Cash | Cancelled
+ORD-1037 | 14:25 | Anas Haddad | Amman | Knife Set | Home & Kitchen | 1 | 35.00 | Card | Shipped
+ORD-1038 | 14:30 | Reem Zaidan | Amman | Face Cream | Beauty | 3 | 24.00 | Card | Delivered
+ORD-1039 | 14:37 | Reem Zoubi | Karak | Python Crash Course | Books | 1 | 40.00 | Card | Delivered
+ORD-1040 | 14:56 | Lina Odeh | Amman | USB-C Cable | Electronics | 1 | 6.00 | Card | Delivered
+ORD-1041 | 14:58 | Dana Tawil | Irbid | Bluetooth Headphones | Electronics | 1 | 45.00 | Card | Shipped
+ORD-1042 | 15:05 | Fadi Ghannam | Amman | Shampoo 500ml | Beauty | 1 | 11.00 | Wallet | Shipped
+ORD-1043 | 15:07 | Dana Ghannam | Irbid | Bluetooth Headphones | Electronics | 1 | 45.00 | Cash | Delivered
+ORD-1044 | 15:16 | Omar Nasser | Salt | Running Shoes | Fashion | 1 | 55.00 | Wallet | Delivered
+ORD-1045 | 15:17 | Zeina Qasem | Irbid | Makeup Brush Set | Beauty | 1 | 29.00 | Card | Shipped
+ORD-1046 | 15:33 | Khalid Darwish | Karak | Face Cream | Beauty | 1 | 24.00 | Cash | Delivered
+ORD-1047 | 15:49 | Ghada Zaidan | Irbid | USB-C Cable | Electronics | 3 | 6.00 | Wallet | Returned
+ORD-1048 | 15:57 | Maya Sultan | Amman | Arabic Novel Collection | Books | 1 | 20.00 | Cash | Delivered
+ORD-1049 | 16:10 | Mazen Bitar | Madaba | Smart Watch | Electronics | 1 | 95.00 | Card | Delivered
+ORD-1050 | 16:11 | Amal Rifai | Amman | USB-C Cable | Electronics | 1 | 6.00 | Cash | Pending
+ORD-1051 | 16:16 | Dana Ghannam | Irbid | Arabic Novel Collection | Books | 2 | 20.00 | Cash | Pending
+ORD-1052 | 16:23 | Zeina Qasem | Irbid | Electric Kettle | Home & Kitchen | 5 | 30.00 | Card | Delivered
+ORD-1053 | 16:30 | Ahmad Nasser | Zarqa | Running Shoes | Fashion | 1 | 55.00 | Cash | Cancelled
+ORD-1054 | 16:37 | Yara Mansour | Irbid | Bluetooth Headphones | Electronics | 2 | 45.00 | Card | Pending
+ORD-1055 | 16:41 | Khalid Khatib | Amman | Bluetooth Headphones | Electronics | 2 | 45.00 | Card | Pending
+ORD-1056 | 16:43 | Ziad Haddad | Karak | Food Container Set | Home & Kitchen | 1 | 18.00 | Wallet | Delivered
+ORD-1057 | 16:51 | Mazen Bitar | Madaba | Wireless Mouse | Electronics | 1 | 12.50 | Card | Shipped
+ORD-1058 | 17:06 | Anas Haddad | Amman | Cotton T-Shirt | Fashion | 1 | 15.00 | Cash | Cancelled
+ORD-1059 | 17:07 | Reem Farhan | Amman | Denim Jacket | Fashion | 1 | 48.00 | Card | Delivered
+ORD-1060 | 17:25 | Hiba Masri | Zarqa | Denim Jacket | Fashion | 1 | 48.00 | Card | Cancelled
+ORD-1061 | 17:27 | Sana Sarhan | Amman | Knife Set | Home & Kitchen | 1 | 35.00 | Card | Delivered
+ORD-1062 | 17:28 | Yara Mansour | Irbid | Laptop Stand | Electronics | 1 | 22.00 | Card | Delivered
+ORD-1063 | 17:37 | Zeina Bitar | Amman | Power Bank 10000mAh | Electronics | 1 | 28.00 | Cash | Delivered
+ORD-1064 | 17:41 | Tariq Zaidan | Amman | Water Bottle 1L | Sports | 1 | 8.50 | Card | Delivered
+ORD-1065 | 17:44 | Reem Zaidan | Amman | USB-C Cable | Electronics | 1 | 6.00 | Card | Delivered
+ORD-1066 | 17:46 | Jana Halabi | Aqaba | Denim Jacket | Fashion | 1 | 48.00 | Card | Delivered
+ORD-1067 | 17:46 | Lina Odeh | Amman | Wireless Mouse | Electronics | 2 | 12.50 | Card | Returned
+ORD-1068 | 17:48 | Hussein Sultan | Amman | Smart Watch | Electronics | 1 | 95.00 | Card | Returned
+ORD-1069 | 17:56 | Tala Zaidan | Irbid | Yoga Mat | Sports | 1 | 26.00 | Wallet | Delivered
+ORD-1070 | 18:02 | Waleed Zoubi | Amman | Bluetooth Headphones | Electronics | 2 | 45.00 | Card | Delivered
+ORD-1071 | 18:03 | Maya Awad | Amman | Smart Watch | Electronics | 2 | 95.00 | Cash | Delivered
+ORD-1072 | 18:06 | Ibrahim Jaber | Zarqa | Face Cream | Beauty | 1 | 24.00 | Card | Shipped
+ORD-1073 | 18:10 | Jana Sultan | Amman | Coffee Maker | Home & Kitchen | 1 | 65.00 | Card | Delivered
+ORD-1074 | 18:14 | Amal Rifai | Amman | Coffee Maker | Home & Kitchen | 4 | 65.00 | Card | Delivered
+ORD-1075 | 18:19 | Reem Zaidan | Amman | Coffee Maker | Home & Kitchen | 1 | 65.00 | Cash | Shipped
+ORD-1076 | 18:20 | Lina Odeh | Amman | Food Container Set | Home & Kitchen | 2 | 18.00 | Card | Cancelled
+ORD-1077 | 18:25 | Yara Mansour | Irbid | Denim Jacket | Fashion | 1 | 48.00 | Cash | Pending
+ORD-1078 | 18:39 | Maya Hijazi | Amman | Leather Wallet | Fashion | 3 | 25.00 | Wallet | Delivered
+ORD-1079 | 18:47 | Yousef Khoury | Jerash | Data Analysis Handbook | Books | 1 | 52.00 | Card | Delivered
+ORD-1080 | 19:09 | Zeina Qasem | Irbid | Food Container Set | Home & Kitchen | 1 | 18.00 | Card | Delivered
+ORD-1081 | 19:11 | Tariq Zaidan | Amman | Air Fryer | Home & Kitchen | 1 | 120.00 | Card | Delivered
+ORD-1082 | 19:14 | Waleed Zoubi | Amman | Kids Story Book | Books | 1 | 9.00 | Cash | Delivered
+ORD-1083 | 19:16 | Nour Barakat | Aqaba | Running Shoes | Fashion | 1 | 55.00 | Card | Delivered
+ORD-1084 | 19:17 | Hadi Rifai | Irbid | Data Analysis Handbook | Books | 1 | 52.00 | Card | Delivered
+ORD-1085 | 19:18 | Rania Farhan | Zarqa | Leather Wallet | Fashion | 1 | 25.00 | Wallet | Shipped
+ORD-1086 | 19:21 | Zeina Qasem | Irbid | Data Analysis Handbook | Books | 1 | 52.00 | Cash | Pending
+ORD-1087 | 19:26 | Fadi Ghannam | Amman | Resistance Bands | Sports | 2 | 14.00 | Wallet | Shipped
+ORD-1088 | 19:27 | Anas Haddad | Amman | Bluetooth Headphones | Electronics | 1 | 45.00 | Card | Shipped
+ORD-1089 | 19:35 | Reem Zaidan | Amman | Air Fryer | Home & Kitchen | 1 | 120.00 | Cash | Returned
+ORD-1090 | 19:39 | Reem Zaidan | Amman | Knife Set | Home & Kitchen | 1 | 35.00 | Card | Delivered
+ORD-1091 | 19:41 | Nabil Tamimi | Zarqa | Data Analysis Handbook | Books | 2 | 52.00 | Cash | Delivered
+ORD-1092 | 20:01 | Amal Rifai | Amman | Running Shoes | Fashion | 2 | 55.00 | Cash | Pending
+ORD-1093 | 20:02 | Khalid Khatib | Amman | Smart Watch | Electronics | 1 | 95.00 | Cash | Shipped
+ORD-1094 | 20:06 | Lina Karam | Zarqa | Face Cream | Beauty | 1 | 24.00 | Wallet | Delivered
+ORD-1095 | 20:06 | Jana Sultan | Amman | Laptop Stand | Electronics | 4 | 22.00 | Cash | Delivered
+ORD-1096 | 20:06 | Nour Barakat | Aqaba | Sunglasses | Fashion | 1 | 32.00 | Wallet | Delivered
+ORD-1097 | 20:08 | Hadi Zoubi | Zarqa | Coffee Maker | Home & Kitchen | 2 | 65.00 | Card | Delivered
+ORD-1098 | 20:16 | Hussein Sultan | Amman | Smart Watch | Electronics | 1 | 95.00 | Cash | Delivered
+ORD-1099 | 20:17 | Ghada Zaidan | Irbid | Cotton T-Shirt | Fashion | 2 | 15.00 | Card | Delivered
+ORD-1100 | 20:17 | Rania Farhan | Zarqa | Water Bottle 1L | Sports | 1 | 8.50 | Cash | Delivered
+ORD-1101 | 20:19 | Dana Mansour | Amman | Kids Story Book | Books | 1 | 9.00 | Card | Cancelled
+ORD-1102 | 20:21 | Nour Barakat | Aqaba | Yoga Mat | Sports | 1 | 26.00 | Wallet | Cancelled
+ORD-1103 | 20:21 | Ibrahim Jaber | Zarqa | Bluetooth Headphones | Electronics | 1 | 45.00 | Wallet | Pending
+ORD-1104 | 20:27 | Rami Awad | Amman | Wireless Mouse | Electronics | 2 | 12.50 | Cash | Delivered
+ORD-1105 | 20:29 | Nabil Haddad | Madaba | Electric Kettle | Home & Kitchen | 2 | 30.00 | Card | Shipped
+ORD-1106 | 20:30 | Ziad Rifai | Amman | Python Crash Course | Books | 1 | 40.00 | Card | Delivered
+ORD-1107 | 20:32 | Maya Awad | Amman | Power Bank 10000mAh | Electronics | 2 | 28.00 | Card | Delivered
+ORD-1108 | 20:34 | Tariq Zaidan | Amman | Arabic Novel Collection | Books | 1 | 20.00 | Card | Delivered
+ORD-1109 | 20:37 | Waleed Zoubi | Amman | Coffee Maker | Home & Kitchen | 2 | 65.00 | Card | Cancelled
+ORD-1110 | 20:38 | Layla Zoubi | Irbid | Data Analysis Handbook | Books | 3 | 52.00 | Cash | Delivered
+ORD-1111 | 20:55 | Ruba Mansour | Zarqa | Laptop Stand | Electronics | 2 | 22.00 | Cash | Delivered
+ORD-1112 | 20:58 | Reem Zaidan | Amman | Wireless Mouse | Electronics | 2 | 12.50 | Cash | Cancelled
+ORD-1113 | 21:06 | Khalid Khatib | Amman | Denim Jacket | Fashion | 2 | 48.00 | Card | Delivered
+ORD-1114 | 21:12 | Hadi Rifai | Irbid | Running Shoes | Fashion | 4 | 55.00 | Card | Cancelled
+ORD-1115 | 21:15 | Fadi Ghannam | Amman | Wireless Mouse | Electronics | 1 | 12.50 | Card | Shipped
+ORD-1116 | 21:16 | Salma Hijazi | Salt | Python Crash Course | Books | 1 | 40.00 | Card | Delivered
+ORD-1117 | 21:24 | Anas Haddad | Amman | Perfume 50ml | Beauty | 4 | 68.00 | Card | Shipped
+ORD-1118 | 21:24 | Zeina Salameh | Amman | Arabic Novel Collection | Books | 1 | 20.00 | Wallet | Delivered
+ORD-1119 | 21:26 | Zeina Nasser | Zarqa | Bluetooth Headphones | Electronics | 1 | 45.00 | Cash | Shipped
+ORD-1120 | 21:27 | Layla Zoubi | Irbid | Dumbbell Set 10kg | Sports | 2 | 58.00 | Wallet | Returned
+ORD-1121 | 21:29 | Ziad Rifai | Amman | Sunglasses | Fashion | 2 | 32.00 | Cash | Delivered
+ORD-1122 | 21:30 | Tala Zaidan | Irbid | Coffee Maker | Home & Kitchen | 2 | 65.00 | Wallet | Delivered
+ORD-1123 | 21:31 | Yara Mansour | Irbid | Shampoo 500ml | Beauty | 1 | 11.00 | Card | Returned
+ORD-1124 | 21:32 | Hadi Rifai | Irbid | Laptop Stand | Electronics | 3 | 22.00 | Cash | Delivered
+ORD-1125 | 21:33 | Ruba Mansour | Zarqa | Knife Set | Home & Kitchen | 2 | 35.00 | Cash | Delivered
+ORD-1126 | 21:41 | Hussein Sultan | Amman | Smart Watch | Electronics | 2 | 95.00 | Card | Shipped
+ORD-1127 | 21:43 | Reem Zoubi | Karak | Running Shoes | Fashion | 1 | 55.00 | Cash | Delivered
+ORD-1128 | 21:51 | Ziad Rifai | Amman | Knife Set | Home & Kitchen | 2 | 35.00 | Card | Delivered
+ORD-1129 | 21:51 | Reem Zoubi | Karak | Face Cream | Beauty | 1 | 24.00 | Wallet | Shipped
+ORD-1130 | 21:53 | Hadi Zoubi | Zarqa | Face Cream | Beauty | 2 | 24.00 | Card | Shipped
+ORD-1131 | 22:02 | Maya Hijazi | Amman | Perfume 50ml | Beauty | 2 | 68.00 | Cash | Delivered
+ORD-1132 | 22:05 | Reem Zoubi | Karak | Resistance Bands | Sports | 5 | 14.00 | Card | Pending
+ORD-1133 | 22:10 | Khalid Farhan | Irbid | Bluetooth Headphones | Electronics | 1 | 45.00 | Card | Shipped
+ORD-1134 | 22:16 | Zeina Salameh | Amman | Python Crash Course | Books | 5 | 40.00 | Card | Delivered
+ORD-1135 | 22:18 | Khalid Farhan | Irbid | Smart Watch | Electronics | 1 | 95.00 | Card | Delivered
+ORD-1136 | 22:20 | Zeina Nasser | Zarqa | Dumbbell Set 10kg | Sports | 5 | 58.00 | Wallet | Delivered
+ORD-1137 | 22:23 | Layla Zoubi | Irbid | Running Shoes | Fashion | 2 | 55.00 | Card | Delivered
+ORD-1138 | 22:24 | Hiba Masri | Zarqa | Running Shoes | Fashion | 1 | 55.00 | Wallet | Pending
+ORD-1139 | 22:28 | Ghada Zaidan | Irbid | Leather Wallet | Fashion | 2 | 25.00 | Card | Delivered
+ORD-1140 | 22:28 | Yousef Khoury | Jerash | Sunglasses | Fashion | 1 | 32.00 | Cash | Cancelled
+ORD-1141 | 22:29 | Rania Farhan | Zarqa | Running Shoes | Fashion | 2 | 55.00 | Wallet | Cancelled
+ORD-1142 | 22:40 | Dana Ghannam | Irbid | Knife Set | Home & Kitchen | 2 | 35.00 | Card | Shipped
+ORD-1143 | 22:40 | Ziad Rifai | Amman | Knife Set | Home & Kitchen | 3 | 35.00 | Cash | Delivered
+ORD-1144 | 22:46 | Ibrahim Odeh | Irbid | Face Cream | Beauty | 3 | 24.00 | Card | Pending
+ORD-1145 | 22:51 | Reem Sultan | Jerash | Running Shoes | Fashion | 1 | 55.00 | Card | Delivered
+ORD-1146 | 22:53 | Rasha Halabi | Amman | Leather Wallet | Fashion | 1 | 25.00 | Wallet | Cancelled
+ORD-1147 | 23:06 | Mazen Bitar | Madaba | Power Bank 10000mAh | Electronics | 1 | 28.00 | Cash | Pending
+ORD-1148 | 23:42 | Tala Zaidan | Irbid | Sunglasses | Fashion | 1 | 32.00 | Card | Returned
+ORD-1149 | 23:51 | Ziad Rifai | Amman | Knife Set | Home & Kitchen | 3 | 35.00 | Card | Shipped
+ORD-1150 | 23:54 | Rania Farhan | Zarqa | USB-C Cable | Electronics | 3 | 6.00 | Card | Pending
