@@ -8,7 +8,7 @@ This repository contains practical Jupyter Notebooks designed to help students l
 
 ### Part 1 — Python Fundamentals
 
-1. [Python Environment and Programming Fundamentals](https://github.com/YazeedAsmar/Data-Science-and-AI-Course/blob/main/Python/01_Python_Environment_and_Programming_Fundamentals%20(1).ipynb)— [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YazeedAsmar/Data-Science-and-AI-Course/blob/main/Python/01_Python_Environment_and_Programming_Fundamentals%20%281%29.ipynb)
+1. [Python Environment and Programming Fundamentals](https://github.com/YazeedAsmar/Data-Science-and-AI-Course/blob/main/Python/01_Python_Environment_and_Programming_Fundamentals%20(1).ipynb)
 2. [Python Data Structures](https://github.com/YazeedAsmar/Data-Science-and-AI-Course/blob/main/Python/02_Python_Data_Structures%20(1).ipynb)
 3. [Control Flow and Iteration](https://github.com/YazeedAsmar/Data-Science-and-AI-Course/blob/main/Python/03_Control_Flow_and_Iteration.ipynb)
 4. [Functions and Modular Programming](https://github.com/YazeedAsmar/Data-Science-and-AI-Course/blob/main/Python/04_Functions_and_Modular_Programming.ipynb)
