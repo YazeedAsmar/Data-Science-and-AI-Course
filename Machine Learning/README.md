@@ -24,7 +24,7 @@ The learning journey progresses from fundamental concepts to advanced algorithms
 7. [Pipelines](ML_07_Pipelines_Professional.ipynb)
 8. [Cross-Validation](ML_08_Cross_Validation_Professional.ipynb)
 
-### Part 3 — Supervised Machine Learning Algorithms
+### Part 3 — Machine Learning Algorithms
 
 9. [Regression](ML_09_Regression.ipynb)
 10. [Logistic Regression and Classification Fundamentals](ML_10_Logistic_Regression_Classification_Fundamentals.ipynb)
