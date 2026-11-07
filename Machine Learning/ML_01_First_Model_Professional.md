@@ -1,4 +1,4 @@
-[![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1BGq5AxayycSY08RavtsaKO9oKdTnmAKj?usp=sharing)
+[![Open in Google Colab](https://colab.research.google.com/drive/1sv5OWGjoVmFSGEyZtiQ8iN8cNV1y7Gw1?usp=sharing)
 
 # Machine Learning Fundamentals — Unit 01: Your First Machine Learning Model
 
