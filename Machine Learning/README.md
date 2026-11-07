@@ -2,9 +2,9 @@
 
 Welcome to the Machine Learning section of the Data Science and AI Course.
 
-This repository contains a structured collection of practical Jupyter Notebooks designed to help students understand machine learning concepts, build predictive models, evaluate model performance, and apply machine learning techniques to real-world datasets.
+This repository contains a structured collection of practical Jupyter Notebooks designed to help students understand machine learning concepts, prepare datasets, build predictive models, and apply different machine learning algorithms to real-world problems.
 
-The learning journey progresses from fundamental concepts to advanced algorithms and practical model optimization.
+The learning journey progresses from fundamental concepts and data preparation to advanced algorithms, model optimization, feature engineering, and unsupervised learning.
 
 ---
 
@@ -24,7 +24,7 @@ The learning journey progresses from fundamental concepts to advanced algorithms
 7. [Pipelines](ML_07_Pipelines_Professional.ipynb)
 8. [Cross-Validation](ML_08_Cross_Validation_Professional.ipynb)
 
-### Part 3 — Machine Learning Algorithms
+### Part 3 — Core Machine Learning Algorithms
 
 9. [Regression](ML_09_Regression.ipynb)
 10. [Logistic Regression and Classification Fundamentals](ML_10_Logistic_Regression_Classification_Fundamentals.ipynb)
@@ -36,6 +36,14 @@ The learning journey progresses from fundamental concepts to advanced algorithms
 13. [Gradient Boosting and XGBoost](ML_13_Gradient_Boosting_XGBoost.ipynb)
 14. [Model Selection, Regularization and Applied ML Workshop](ML_14_Model_Selection_Regularization_Applied_ML_Workshop.ipynb)
 
+### Part 5 — Feature Engineering and Feature Selection
+
+15. [Feature Engineering and Feature Selection](ML_15_Feature_Engineering_Feature_Selection.ipynb)
+
+### Part 6 — Unsupervised Learning and Clustering
+
+16. [Unsupervised Learning and Clustering](ML_16_Unsupervised_Learning_Clustering.ipynb)
+
 ---
 
 ## How to Use This Repository
@@ -44,23 +52,26 @@ The learning journey progresses from fundamental concepts to advanced algorithms
 - Open each notebook directly on GitHub to explore the explanations, code examples, and practical exercises.
 - For hands-on learning, download the notebooks or open them in Google Colab.
 - Follow the practical examples and experiment with the provided datasets.
-- Complete the exercises before moving to the next topic.
-- Practice building and evaluating your own machine learning models.
+- Complete the exercises and practice tasks before moving to the next topic.
+- Experiment with different algorithms and compare their performance.
 
 ## Learning Objectives
 
 By the end of this section, students should be able to:
 
 - Understand fundamental machine learning concepts and workflows.
-- Build and train predictive machine learning models.
-- Understand the difference between regression and classification.
-- Prepare datasets by handling missing values and categorical variables.
-- Apply pipelines and cross-validation techniques.
-- Identify and address underfitting and overfitting.
+- Prepare datasets for machine learning applications.
+- Handle missing values and encode categorical variables.
+- Build machine learning pipelines and apply cross-validation.
+- Understand and address underfitting and overfitting.
+- Build regression and classification models.
 - Implement different machine learning algorithms.
 - Evaluate models using appropriate performance metrics.
+- Apply ensemble learning techniques such as Random Forest and Gradient Boosting.
 - Optimize model performance through model selection and regularization.
-- Apply machine learning techniques to practical, real-world problems.
+- Perform feature engineering and feature selection.
+- Understand and apply unsupervised learning techniques.
+- Use clustering algorithms to discover patterns and groups in datasets.
 
 ## Tools and Technologies
 
