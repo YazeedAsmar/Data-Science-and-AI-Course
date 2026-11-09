@@ -13,8 +13,8 @@ The learning journey progresses from fundamental concepts and data preparation t
 ### Part 1 — Machine Learning Fundamentals
 
 1. [First Machine Learning Model](https://github.com/YazeedAsmar/Data-Science-and-AI-Course/blob/main/Machine%20Learning/ML_01_First_Model_Professional.md)
-2. [Model Validation](ML_02_Model_Validation_Professional.ipynb)
-3. [Underfitting and Overfitting](ML_03_Underfitting_and_Overfitting_Professional.ipynb)
+2. [Model Validation](ML_02_Model_Validation_Professional.md)
+3. [Underfitting and Overfitting](ML_03_Underfitting_and_Overfitting_Professional.md)
 4. [Random Forests](ML_04_Random_Forests_Professional.ipynb)
 
 ### Part 2 — Data Preparation and Model Validation
