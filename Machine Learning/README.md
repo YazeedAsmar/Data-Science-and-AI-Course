@@ -21,7 +21,7 @@ The learning journey progresses from fundamental concepts and data preparation t
 
 5. [Missing Values](ML_05_Missing_Values_Professional.md)
 6. [Categorical Variables](ML_06_Categorical_Variables_Professional.md)
-7. [Pipelines](ML_07_Pipelines_Professional.ipynb)
+7. [Pipelines](ML_07_Pipelines_Professional.md)
 8. [Cross-Validation](ML_08_Cross_Validation_Professional.ipynb)
 
 ### Part 3 — Core Machine Learning Algorithms
