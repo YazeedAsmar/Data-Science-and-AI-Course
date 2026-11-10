@@ -45,6 +45,7 @@ The learning journey progresses from fundamental concepts and data preparation t
 16. [Unsupervised Learning and Clustering](ML_16_Unsupervised_Learning_Clustering.ipynb)
 
 ---
+[First Project](https://colab.research.google.com/drive/1OiYCnHFKmBfZpLDdXOLji1VRjYANZT0G?usp=sharing))
 
 ## How to Use This Repository
 
