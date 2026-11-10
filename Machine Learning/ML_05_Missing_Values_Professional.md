@@ -3,8 +3,7 @@
 # Machine Learning Fundamentals
 ### Unit 05 — Missing Values
 
-**Stage 2 · Machine Learning | Beginner Level | B2 English**
-
+**Stage 2 · Machine Learning 
 [![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1-jHWynlvLvUecM4PNskP4XLCJt0tvG3T?usp=sharing)
 
 *Learn how to identify missing data, compare preprocessing strategies, and evaluate their effect on Machine Learning performance.*
