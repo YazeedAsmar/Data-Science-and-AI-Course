@@ -1,5 +1,11 @@
 [![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TF7l6nYu015KTtlRrRcIRKmnpdRr8F6w?usp=sharing)
 
+
+### Project Link :
+[![Open in Google Colab](https://colab.research.google.com/drive/1wdvWm7YXMFSg-74gbaq1iPWFkBOgOuqq?usp=sharing)
+
+
+
 # Unit 10 — Logistic Regression: Classification Fundamentals
 
 **Stage 2: Machine Learning**  
