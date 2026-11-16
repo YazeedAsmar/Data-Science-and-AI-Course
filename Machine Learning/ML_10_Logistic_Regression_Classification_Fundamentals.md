@@ -2,7 +2,7 @@
 
 
 ### Project Link :
-[![Open in Google Colab](https://colab.research.google.com/drive/1wdvWm7YXMFSg-74gbaq1iPWFkBOgOuqq?usp=sharing)
+[![Open in Google Colab]](https://colab.research.google.com/drive/1wdvWm7YXMFSg-74gbaq1iPWFkBOgOuqq?usp=sharing)
 
 
 
