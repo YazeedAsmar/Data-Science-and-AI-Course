@@ -1,262 +1,268 @@
-[![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pNig5CdSPU5A19PxvzyrjL1fpiCPZYPi?usp=sharing)
+[![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TF7l6nYu015KTtlRrRcIRKmnpdRr8F6w?usp=sharing)
 
-# Unit 09 — Regression: Predicting a Number
+# Unit 10 — Logistic Regression: Classification Fundamentals
 
 **Stage 2: Machine Learning**  
 **Level:** Beginner  
 **Language:** English (B2)  
-**Business scenario:** AdventureWorks order revenue estimation  
+**Business scenario:** AdventureWorks — Order Return Risk  
 **Environment:** Google Colab / Jupyter Notebook
 
 ---
 
 ## Overview
 
-In this unit, learners explore **regression**, a supervised machine learning task used to predict numerical values.
+In this unit, learners move from regression to **binary classification**. The business scenario is based on AdventureWorks, where the operations team wants to identify newly placed orders that may be returned.
 
-Using AdventureWorks order data, the goal is to estimate an order's `net_revenue` from information available when the prediction is made. Learners begin with a simple baseline, build and interpret Linear Regression models, evaluate prediction errors, inspect residuals, and combine preprocessing and modeling in a scikit-learn pipeline.
+The notebook uses Logistic Regression to estimate the probability that an order will be returned. Learners explore how a linear score is converted into a probability, prepare numerical and categorical features, train a classification pipeline, inspect predictions, and select a decision threshold based on an operational review-capacity limit.
 
-The unit also highlights an important limitation: a good evaluation score does not automatically mean that a model represents the business process correctly.
+The central idea is that a model's probability is not automatically a business decision. The organization must choose how to act on that probability.
 
 ## Business Question
 
-Can we estimate an order's net revenue before the order is completed, using the order details available at prediction time?
+Which newly placed orders should the operations team prioritize for review when it cannot manually review every order?
 
-### Prediction Inputs
+**Target:** `returned`
 
-- `quantity`
-- `unit_price`
-- `discount_pct`
-- `shipping_fee`
-- `customer_segment`
-- `sales_channel`
+- `1` means the order was returned.
+- `0` means the order was not returned.
+
+**Prediction moment:** Immediately after an order is placed. Only information available at that moment may be used.
+
+### Prediction Features
+
+The notebook uses the following features:
+
+- `order_value`
+- `item_count`
+- `discount_rate`
 - `product_category`
+- `sales_channel`
+- `customer_tenure_months`
+- `payment_method`
 
-**Target (`y`):** `net_revenue`, a numerical value in dollars.
+**Excluded fields:**
 
-**Excluded field:** `order_id` is an identifier, not a feature that explains revenue. The target `net_revenue` must never be included among the input features.
+- `order_id` is an identifier, not a predictive feature.
+- `refund_amount` and `return_reason` are only available after the return outcome.
+- `returned` is the target and must not be included in the input features.
 
-Only information known at prediction time should be used. Information created after an order is completed must not be included in the model inputs.
+Using information that becomes available only after the outcome would create data leakage and would not reflect the real prediction scenario.
 
 ## Learning Outcomes
 
 By the end of this unit, learners will be able to:
 
-- Distinguish regression from classification.
-- Identify the target variable and prediction-time features.
-- Explain why identifiers should not be treated as predictive features.
-- Establish a baseline using the training target mean.
-- Explain the idea of fitting a Linear Regression line using least squares.
-- Interpret coefficients and the intercept in a regression model.
-- Calculate and interpret MAE, RMSE, and R².
-- Compare a baseline model, a quantity-only model, and a model using numerical features.
-- Interpret residuals and actual-versus-predicted plots.
-- Build a preprocessing and modeling workflow using `ColumnTransformer` and `Pipeline`.
-- Recognize when a linear model may be too simple for the underlying business relationship.
+- Frame a business question as a binary classification problem.
+- Explain how Logistic Regression converts a linear score into a probability.
+- Describe the role of the sigmoid function.
+- Distinguish predicted probabilities from predicted class labels.
+- Explain the default 0.50 decision threshold and why it is not always the best business choice.
+- Prepare mixed numerical and categorical features for Logistic Regression.
+- Build a preprocessing and classification workflow using `ColumnTransformer` and `Pipeline`.
+- Train a Logistic Regression classifier and inspect its learned coefficients.
+- Use `predict_proba()` and `predict()` correctly.
+- Compare thresholds using precision, recall, F1-score, and confusion-matrix counts.
+- Select a threshold that respects a business review-capacity constraint.
 
 ## Notebook Roadmap
 
 | Section | Topic | What You Will Learn |
 |---|---|---|
-| 1 | Define the Regression Problem | Identify the business question, target, input features, and prediction moment. |
-| 2 | Avoid Invalid Inputs | Understand why `order_id` is excluded and why the target cannot be used as an input. |
-| 3 | Establish a Baseline | Use the training mean as a simple prediction and evaluate it with MAE. |
-| 4 | Linear Regression | Understand the fitted line, its coefficients, and the least-squares idea. |
-| 5 | Interpret Coefficients | Read the estimated relationship between input features and predicted revenue. |
-| 6 | Regression Metrics | Understand MAE, RMSE, and R² and when each metric is useful. |
-| 7 | Compare Model Performance | Compare the baseline, quantity-only model, and numerical-features model. |
-| 8 | Inspect Prediction Errors | Read residuals and actual-versus-predicted plots to identify patterns. |
-| 9 | Build a Preprocessing Pipeline | Combine numerical and categorical preprocessing with Linear Regression. |
-| 10 | Understand Model Limitations | Explore why a straight-line model may not represent a multiplicative revenue formula. |
-| 11 | Regression Checklist | Review the main steps for building and evaluating a regression model. |
+| 1 | The Classification Decision | Define the business decision, target, prediction moment, and valid input features. |
+| 2 | From a Linear Score to a Probability | Understand Logistic Regression and the sigmoid function. |
+| 2.1 | Read the Model Output | Distinguish a probability estimate from a final class label. |
+| 3 | Build the AdventureWorks Workflow | Generate and inspect the order dataset and prepare the feature matrix and target. |
+| 3.1 | Prepare Mixed Data Without Leakage | Impute missing values, scale numerical features, encode categories, and split the data. |
+| 4 | Interpret Predictions and Coefficients | Inspect class order, predicted probabilities, predicted labels, and example predictions. |
+| 5 | Make a Threshold-Based Business Decision | Compare candidate thresholds and their operational impact. |
+| 5.1 | Translate Results into an Operating Choice | Select a feasible threshold under the review-capacity limit. |
+| 6 | Applied Mini-Project | Use the workflow and evidence to recommend a practical classification decision. |
 
 ## Key Concepts
 
 ### 1. Regression vs. Classification
 
-Regression predicts a numerical value, such as an order's net revenue. Classification predicts a category or class, such as `Low`, `Medium`, or `High`.
+Regression estimates a numerical quantity, such as order revenue. Classification estimates a category, such as whether an order will be returned.
 
-In this unit, the model predicts a dollar amount rather than choosing from a fixed set of classes.
+This notebook focuses on **binary classification**, because the target has two possible values: returned (`1`) or not returned (`0`).
 
-### 2. Start with a Baseline
+The model does not determine with certainty whether an order will be returned. It estimates risk from patterns in historical examples. The operations team decides what action to take.
 
-A baseline provides a simple reference point. The unit uses a mean baseline that always predicts the mean `net_revenue` calculated from the training data.
+### 2. Logistic Regression and the Sigmoid Function
 
-Reference result shown in the slides:
+Despite the word *regression* in its name, Logistic Regression is used here as a classification algorithm.
 
-- Training mean prediction: **$993**
-- Test MAE: **$668**
-
-A more complex model should be compared with this baseline. If it cannot improve on a simple reference model, its added complexity may not be useful.
-
-### 3. Linear Regression and Least Squares
-
-For a single input feature, the Linear Regression equation is:
+The model first calculates a linear score from the input features and their learned coefficients. It then applies the sigmoid function to map the score to a value between 0 and 1.
 
 \[
-\hat{y} = b_0 + b_1 x
+p = \frac{1}{1 + e^{-z}}
 \]
 
-Where \(\hat{y}\) is the predicted value, \(b_0\) is the intercept, \(b_1\) is the feature coefficient, and \(x\) is the input value.
+Where:
 
-The least-squares method finds the line that minimizes the sum of squared residuals.
+- \(z\) is the linear score.
+- \(p\) is the estimated probability of the positive class.
 
-The quantity-only example in the slides shows:
+The sigmoid function converts any real-valued score into a probability-like output between 0 and 1.
 
-\[
-\hat{y} = 46.30 + 210.18 \times quantity
-\]
+### 3. Probability vs. Predicted Class
 
-The fitted line is an estimate based on observed data. It does not prove that increasing quantity causes revenue to increase by that amount in every situation.
+A predicted probability is not the same as a final class decision.
 
-### 4. Reading Coefficients
+For example, a return probability of `0.72` means the model estimates a 72% probability for the positive class. Whether the order is flagged depends on the selected threshold.
 
-A coefficient describes the model's estimated change in prediction for a one-unit increase in that feature, while the other included features are held constant.
+The notebook demonstrates the default threshold of **0.50**:
 
-The slides show these example coefficients for a multiple-feature model:
+- Probability greater than or equal to 0.50 → predict class `1`.
+- Probability below 0.50 → predict class `0`.
 
-| Feature | Coefficient | Interpretation |
-|---|---:|---|
-| `quantity` | +219.30 | About $219.30 higher prediction per additional unit. |
-| `unit_price` | +4.22 | About $4.22 higher prediction per additional $1 of unit price. |
-| `discount_pct` | -957.08 | About $95.70 lower prediction for a 0.10 increase in discount. |
-| `shipping_fee` | +0.21 | About $0.21 higher prediction per additional $1 of shipping fee. |
+The 0.50 threshold is a common default, not a universal business rule. A business may choose another threshold based on its costs, risks, and operational capacity.
 
-The intercept is **-917.84**. It represents the model's prediction when all included inputs are zero, which is not a realistic order in this scenario.
+### 4. Prepare Numerical and Categorical Features
 
-**Important:** Coefficients describe associations learned from the data. They do not establish cause and effect.
+Logistic Regression requires numerical input and can be sensitive to feature scale. The notebook applies separate preprocessing steps to each feature group.
 
-### 5. Regression Evaluation Metrics
-
-| Metric | What It Measures | Better Result |
-|---|---|---|
-| **MAE** | Average absolute prediction error, in dollars. | Lower |
-| **RMSE** | Square root of the average squared error; larger errors receive more weight. | Lower |
-| **R²** | Compares the model with a model that always predicts the mean. | Higher |
-
-R² can be negative when the model performs worse than the mean-prediction reference on the evaluated data.
-
-### 6. Compare Models Against the Baseline
-
-The slide comparison reports these test results:
-
-| Model | Test MAE |
-|---|---:|
-| Mean baseline | $668.38 |
-| Quantity only | $489.59 |
-| Numerical features | $217.45 |
-
-The slides also report:
-
-| Metric | Mean Baseline | Quantity Only | Numerical Features |
-|---|---:|---:|---:|
-| R² | -0.00 | 0.41 | 0.86 |
-| RMSE | 794 | 609 | 292 |
-
-In this experiment, using the numerical features gives a substantially lower test MAE than the baseline and quantity-only model. These are reference results from the presentation; actual results can vary with the data and execution environment.
-
-### 7. Residual Analysis
-
-A residual is the difference between the observed value and the predicted value:
-
-\[
-Residual = y - \hat{y}
-\]
-
-- **Positive residual:** actual revenue is higher than the prediction.
-- **Negative residual:** the prediction is higher than actual revenue.
-
-Residual plots help reveal patterns that a single metric cannot show. The presentation highlights a curved pattern in the residuals, suggesting that the straight-line model may be missing structure in the data.
-
-An ideal residual plot should not show a clear systematic pattern. Patterns can indicate that the model form or selected features are not capturing the relationship adequately.
-
-### 8. One Pipeline for Numerical and Categorical Features
-
-The unit presents a workflow that combines preprocessing and Linear Regression:
-
-| Feature Group | Preprocessing Steps |
+| Feature Group | Preprocessing |
 |---|---|
-| Numerical columns (4) | `SimpleImputer(strategy="median")` → `StandardScaler` |
-| Categorical columns (3) | `SimpleImputer(strategy="most_frequent")` → `OneHotEncoder` |
+| Numerical | Fill missing values using the median, then standardize with `StandardScaler`. |
+| Categorical | Fill missing values using the most frequent category, then apply `OneHotEncoder(handle_unknown="ignore")`. |
 
-`ColumnTransformer` applies the correct preprocessing steps to each feature group. `Pipeline` then connects the preprocessing workflow to the Linear Regression model.
+The notebook uses `ColumnTransformer` to apply the correct transformations to each group of columns.
 
-The presentation reports:
+### 5. Train and Evaluate Without Data Leakage
 
-- Full pipeline MAE: **$216.23**
-- Numerical-features-only MAE: **$217.45**
+The notebook creates three data partitions:
 
-The same fitted preprocessing rules are reused for new orders. This helps keep training and prediction transformations consistent.
+| Partition | Share of Full Dataset | Purpose |
+|---|---:|---|
+| Training | 60% | Fit preprocessing and train the classifier. |
+| Validation | 20% | Compare thresholds and make the operating choice. |
+| Test | 20% | Reserved for final evaluation after decisions are fixed. |
 
-### 9. A Limitation of a Straight-Line Model
+The splits use `stratify` to preserve the target-class proportions across the partitions.
 
-The presentation highlights that revenue is based on a multiplicative relationship:
+All preprocessing and the classifier are combined in a `Pipeline`. The pipeline is fitted on the training data, so the validation and test data do not influence the imputation values, scaling parameters, or category mappings.
 
-\[
-Revenue = quantity \times price \times (1 - discount)
-\]
+### 6. Understand the Model Outputs
 
-A simple linear model that adds feature contributions may not represent this relationship well in every case. The slides show an example where a Linear Regression prediction is negative, even though negative revenue is not possible in the business context.
+The notebook uses two important methods:
 
-An additional experiment is shown in the presentation: create a feature named `gross` using the revenue expression above. The slide reports an MAE change from **217 to 47**.
+- `predict_proba()` returns estimated probabilities for each class.
+- `predict()` returns class labels using the estimator's default decision rule.
 
-> **Important:** The presentation explicitly labels this as an extra experiment, not part of the notebook. Treat it as an extension idea rather than an output learners should expect from the notebook.
+The probability columns follow the order in `classifier.classes_`. The notebook checks this class order before selecting the probability for class `1`.
+
+It also creates a prediction review table containing the actual class, predicted class, estimated return probability, and whether the prediction is correct.
+
+### 7. Decision Thresholds and Operational Trade-offs
+
+A threshold determines when an order is flagged for review.
+
+- A **lower threshold** generally flags more orders. It may capture more actual returns, but it can also increase unnecessary reviews.
+- A **higher threshold** generally flags fewer orders. It can reduce the review queue, but may miss more actual returns.
+
+The notebook compares these candidate thresholds:
+
+`0.25`, `0.35`, `0.50`, `0.65`, and `0.75`.
+
+For each threshold, it reports:
+
+- Number of flagged orders.
+- Precision.
+- Recall.
+- F1-score.
+- Missed returns.
+- Unnecessary reviews.
+
+### 8. Select a Threshold Based on Review Capacity
+
+The business scenario assumes that the operations team can review at most **15% of incoming orders**.
+
+The notebook calculates the maximum number of orders that can be reviewed, filters out thresholds that exceed this capacity, and sorts feasible options by recall and then precision.
+
+This is a constrained business decision. The threshold with the highest F1-score is not automatically the best choice if it exceeds the team's review capacity.
+
+**Important:** Threshold selection is performed using validation data. The test set should remain untouched until the threshold and operating decision have been fixed.
+
+## Dataset
+
+The notebook creates a synthetic AdventureWorks-style order dataset in code. It generates **2,400 orders** with numerical and categorical features, then creates a binary `returned` target using a simulated return-risk pattern with random variation.
+
+A small number of missing values are added to selected features:
+
+- `order_value`
+- `customer_tenure_months`
+- `product_category`
+
+**No external CSV file is required** for this notebook. The dataset is generated when the data-generation cell runs.
+
+The generated data is designed for learning the classification workflow. It is not a real operational record of customer returns.
 
 ## Tools and Libraries
 
-The presentation identifies a scikit-learn workflow using:
+The notebook uses:
 
-- **Linear Regression** — predict a numerical target.
-- **Baseline model** — provide a simple reference prediction.
-- **SimpleImputer** — fill missing values.
-- **StandardScaler** — scale numerical features.
-- **OneHotEncoder** — encode categorical features.
-- **ColumnTransformer** — apply different preprocessing to different feature groups.
-- **Pipeline** — connect preprocessing and model training.
-- **MAE, RMSE, and R²** — evaluate regression performance.
+- **NumPy** — numerical operations and synthetic data generation.
+- **Pandas** — create and inspect the order dataset and prediction reports.
+- **Matplotlib** — visualize the sigmoid function.
+- **scikit-learn**
+  - `ColumnTransformer`
+  - `SimpleImputer`
+  - `StandardScaler`
+  - `OneHotEncoder`
+  - `Pipeline`
+  - `LogisticRegression`
+  - `train_test_split`
+  - `precision_score`
+  - `recall_score`
+  - `f1_score`
+  - `confusion_matrix`
 
 ## How to Use This Notebook
 
 1. Open the notebook using the **Open in Google Colab** button at the top of this page.
 2. Run the notebook cells in order.
-3. Identify the target variable and the information available at prediction time.
-4. Review the baseline before evaluating more complex models.
-5. Compare the regression models using the evaluation metrics.
-6. Inspect the residual and actual-versus-predicted plots.
-7. Review how numerical and categorical preprocessing is combined in a pipeline.
-8. Use the presentation's additional `gross` feature experiment as an extension discussion, not as a required notebook result.
+3. Review the business question and identify which features are available at prediction time.
+4. Explore how the sigmoid function maps a linear score to a probability.
+5. Run the data-generation and preprocessing steps.
+6. Review the model's predicted probabilities and class labels.
+7. Compare the candidate thresholds using the validation results.
+8. Identify which thresholds satisfy the 15% review-capacity limit.
+9. Explain the trade-off between capturing more returns and keeping the review queue manageable.
 
 ## Practical Challenge
 
 After completing the notebook:
 
-1. Compare the mean baseline, quantity-only model, and numerical-features model using MAE.
-2. Explain why `order_id` should not be included as a model feature.
-3. Interpret one coefficient from the multiple-feature model.
-4. Explain what a positive and a negative residual mean.
-5. Compare MAE and RMSE. Why does RMSE give more weight to large errors?
-6. Explain why the pipeline uses different preprocessing steps for numerical and categorical columns.
-7. Discuss why a linear model may produce an unrealistic negative revenue prediction.
+1. Change the candidate threshold list and compare the new results.
+2. Explain how lowering the threshold affects the number of flagged orders.
+3. Compare precision and recall. Why can improving one affect the other?
+4. Identify a threshold that satisfies the 15% review-capacity constraint.
+5. Explain why threshold selection should use validation data rather than the test set.
+6. Identify one feature that would cause data leakage if it were used at the prediction moment.
+7. Explain why the model's probability should support, rather than replace, the business decision.
 
 ## Readiness Checklist
 
-- [ ] I can explain the difference between regression and classification.
-- [ ] I can identify the target and valid prediction-time features.
-- [ ] I understand why a baseline is important.
-- [ ] I can explain the Linear Regression equation and least-squares idea.
-- [ ] I can interpret coefficients and the intercept.
-- [ ] I can compare MAE, RMSE, and R².
-- [ ] I can read residuals and identify patterns in a residual plot.
-- [ ] I understand how `ColumnTransformer` and `Pipeline` work together.
-- [ ] I can identify limitations of a simple linear model.
+- [ ] I can explain why this is a binary classification problem.
+- [ ] I can describe how Logistic Regression uses the sigmoid function.
+- [ ] I can distinguish predicted probabilities from predicted labels.
+- [ ] I understand the default 0.50 threshold.
+- [ ] I can explain the numerical and categorical preprocessing steps.
+- [ ] I understand why preprocessing is fitted on training data only.
+- [ ] I can explain precision, recall, and F1-score.
+- [ ] I can describe the trade-off between lower and higher thresholds.
+- [ ] I can select a threshold under a review-capacity constraint.
+- [ ] I understand why the test set should remain untouched during threshold selection.
 
 ## Key Takeaway
 
-**A regression model predicts a number, but building a useful regression solution requires more than fitting a line: define valid inputs, compare against a baseline, evaluate errors, inspect residuals, and keep preprocessing consistent.**
+**Logistic Regression estimates the probability of a class, but the decision threshold connects that probability to a real business action. A useful classification solution must consider model performance and operational constraints together.**
 
 ## References
 
-- [scikit-learn — Linear Models](https://scikit-learn.org/stable/modules/linear_model.html)
-- [scikit-learn — Model Evaluation](https://scikit-learn.org/stable/modules/model_evaluation.html)
-- [scikit-learn — ColumnTransformer](https://scikit-learn.org/stable/modules/generated/sklearn.compose.ColumnTransformer.html)
-- [scikit-learn — Pipeline](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html)
+- [scikit-learn — Logistic Regression](https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression)
+- [scikit-learn — Classification Metrics](https://scikit-learn.org/stable/modules/model_evaluation.html#classification-metrics)
+- [scikit-learn — Pipeline and Composite Estimators](https://scikit-learn.org/stable/modules/compose.html)
+- [scikit-learn — OneHotEncoder](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html)
