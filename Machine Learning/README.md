@@ -47,6 +47,9 @@ The learning journey progresses from fundamental concepts and data preparation t
 ---
 [Project](https://colab.research.google.com/drive/1OiYCnHFKmBfZpLDdXOLji1VRjYANZT0G?usp=sharing)
 
+### Tracing Project : 
+[Group 1](https://colab.research.google.com/drive/1-27V4JCLkzkf8vAJl3JK7-oyKGyy78r6?usp=sharing)
+
 ## How to Use This Repository
 
 - Start with the first notebook and follow the recommended learning sequence.
