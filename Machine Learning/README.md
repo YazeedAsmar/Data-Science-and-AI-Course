@@ -28,7 +28,7 @@ The learning journey progresses from fundamental concepts and data preparation t
 
 9. [Regression](ML_09_Regression.md)
 10. [Logistic Regression and Classification Fundamentals](ML_10_Logistic_Regression_Classification_Fundamentals.md)
-11. [Classification Evaluation and Performance Metrics](ML_11_Classification_Evaluation_Performance_Metrics.ipynb)
+11. [Classification Evaluation and Performance Metrics](ML_11_Classification_Evaluation_Performance_Metrics.md)
 12. [K-Nearest Neighbors (KNN) and Support Vector Machines (SVM)](ML_12_KNN_SVM.ipynb)
 
 ### Part 4 — Advanced Machine Learning and Model Optimization
