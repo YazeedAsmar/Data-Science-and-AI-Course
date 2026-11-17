@@ -4,10 +4,6 @@
 
 **Stage:** Machine Learning  
 **Program:** Data Science & AI  
-**Level:** Beginner  
-**Language:** English (B2)  
-**Business Case:** AdventureWorks order-return prioritization  
-**Prerequisite:** ML_10 — Logistic Regression & Classification Fundamentals
 
 ---
 
