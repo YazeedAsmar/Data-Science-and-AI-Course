@@ -4,9 +4,6 @@
 
 **Program:** Data Science & AI  
 **Stage:** Machine Learning  
-**Level:** Intermediate  
-**Language:** English (B2)  
-**Business case:** AdventureWorks — Customer Purchase Prediction
 
 ---
 
