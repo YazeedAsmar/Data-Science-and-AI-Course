@@ -34,7 +34,7 @@ The learning journey progresses from fundamental concepts and data preparation t
 ### Part 4 — Advanced Machine Learning and Model Optimization
 
 13. [Gradient Boosting and XGBoost](ML_13_Gradient_Boosting_XGBoost.md)
-14. [Model Selection, Regularization and Applied ML Workshop](ML_14_Model_Selection_Regularization_Applied_ML_Workshop.md)
+14. [Model Selection, Regularization and Applied ML Workshop](ML_14_Model_Selection_Regularization_Applied_ML_Workshop.ipynb)
 
 ### Part 5 — Feature Engineering and Feature Selection
 
