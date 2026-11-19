@@ -56,6 +56,18 @@ The learning journey progresses from fundamental concepts and data preparation t
 
 [Group 4](https://colab.research.google.com/drive/1cBV69E-7D9uItU-c6UcMpZBXESGriT37?usp=sharing)
 
+---
+
+### Supervised Machine Learning Projects : 
+[Group 1](https://colab.research.google.com/drive/15_RI9bjydiSh0AknQV3Q2mGT_4_PSdAU?usp=sharing)
+
+[Group 2](https://colab.research.google.com/drive/1olXBmxBWuRYs9Ff7hVOXA6iunr976rKz?usp=sharing)
+
+[Group 3](https://colab.research.google.com/drive/1KPER3BUtGh59adw4QRFVV2enyZW3G3BO?usp=sharing)
+
+[Group 4](https://colab.research.google.com/drive/1reHJrpHIpXmniDjai2cksPH2cqhBlW-G?usp=sharing)
+
+
 
 ## How to Use This Repository
 
